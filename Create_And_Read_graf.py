@@ -1,11 +1,8 @@
 import json
-import pathlib
-import os
-
 
 
 file_dao_test = "Graf.txt"
-print(os.path.exists("Graf.txt"))
+
 
 def create_graf():
 
@@ -28,3 +25,5 @@ def read_graf():
     myfile =open(way, mode='r')
     g = json.load(myfile)
     return g
+
+create_graf()
