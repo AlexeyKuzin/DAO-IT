@@ -5,7 +5,7 @@ import os
 
 
 file_dao_test = "Graf.txt"
-print(os.path.abspath("Graf.txt"))
+print(os.path.exists("Graf.txt"))
 
 def create_graf():
 
