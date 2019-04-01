@@ -1,11 +1,15 @@
 import json
+import pathlib
+import os
 
 
-file_Dao_test = r"C:\Users\Aleks\PycharmProjects\DAO-IT\Graf.txt"
 
-def create_Graf():
+file_dao_test = "Graf.txt"
+print(os.path.abspath("Graf.txt"))
 
-    G = {
+def create_graf():
+
+    g = {
         1: {2: 7, 3: 9, 6: 14},
         2: {1: 7, 3: 10, 4: 15},
         3: {1: 9, 2: 10, 4: 11, 6: 2},
@@ -14,13 +18,13 @@ def create_Graf():
         6: {1: 14, 3: 2, 5: 9}
     }
 
-    Way = file_Dao_test
-    myfile = open(file_Dao_test, mode='w')
-    json.dump(G, myfile)
+    way = file_dao_test
+    myfile = open(way, mode='w')
+    json.dump(g, myfile)
 
 
-def read_Graf():
-    Way = file_Dao_test
-    myfile =open(file_Dao_test, mode='r')
-    G = json.load(myfile)
-    return G
+def read_graf():
+    way = file_dao_test
+    myfile =open(way, mode='r')
+    g = json.load(myfile)
+    return g
