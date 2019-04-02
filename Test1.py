@@ -1,6 +1,6 @@
 # -*- coding utf-8 -*-
 from Dejc import *
-from Create_And_Read_graf import *
+from create_and_read_graf import *
 
 g = read_graf()
 print(str(type(g)))
